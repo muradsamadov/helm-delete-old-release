@@ -4,7 +4,7 @@ from datetime import datetime
 
 # Set helm_namespace name and rotate_date
 helm_namespace = 'preprod'
-rotate_date = 0
+rotate_date = 20
 
 # Setting some necessary variables
 helm_release_name = os.popen("helm ls --namespace %s | sed  1d | awk -F ' '  '{ print $1 }'" % helm_namespace).read()
