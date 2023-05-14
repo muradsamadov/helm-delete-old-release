@@ -14,7 +14,7 @@ In this case, Helm will delete releases in 'preprod' namespace that have been ru
 python helm_delete_old_release.py
 ```
 ### Result
-The current date is 2023/05/14, and all releases were deployed on the same day. Before executing the script:
+The current date is 2023/05/14 and all releases were deployed on the same day. Before executing the script:
 ```
 helm ls --namespace preprod
 NAME    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART           APP VERSION
