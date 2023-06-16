@@ -31,7 +31,7 @@ for i in range(len(list_2)):
         date_2 = datetime.strptime(current_date, "%Y/%m/%d")
         common_date = date_2 - date_1
         
-        if   rotate_date >= common_date.days:
+        if   rotate_date <= common_date.days:
             os.system('helm uninstall {} --namespace {}'.format(list_2[i],helm_namespace))
             
         del list_1[y]
